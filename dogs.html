@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INST377 - Doggos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>INST377 - Doggos</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Stocks.html">Stocks</a></li>
+      <li><a href="Dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Doggos! 🐶</h2>
+
+    <div class="carousel">
+      <button id="prev">&#10094;</button>
+      <img id="dog-image" src="">
+      <button id="next">&#10095;</button>
+    </div>
+    <div id="breed-buttons" class="breed-buttons"></div>
+    <div id="breed-info" class="breed-info"></div>
+
+  </main>
+
+  <footer>
+    <div id="audio-controls">
+      <h3 style="text-align: left; margin-left: 0px;"> Navigate with Audio!</h3>
+      <p>Enable your mic and try these:</p>
+      <ul>
+        <li>Say: "Hello" — alerts "Hello World"</li>
+        <li>Say: "Change the color to red/blue/etc."</li>
+        <li>Say: "Navigate to home/stocks/dogs"</li>
+        <li>Say: "Load Dog Breed [name]" — loads breed description</li>
+      </ul>
+      <div class="audio-buttons">
+        <button onclick="startAnnyang()">Turn On Listening</button>
+        <button onclick="stopAnnyang()">Turn Off Listening</button>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="dogs.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class Activities - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Page Header -->
+  <header>
+    <h1>INST377 - Activities</h1>
+    <div class="top-bar"></div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h2>These are some different activities we can try!</h2>
+
+    <div class="home-button-container">
+        <a href="Stocks.html">
+          <button class="button-64" role="button"><span class="text">Stocks</span></button>
+        </a>
+        <a href="Dogs.html">
+          <button class="button-64" role="button"><span class="text">Dogs</span></button>
+        </a>
+      </div>
+
+    <!-- Quote Section -->
+    <div id="quote-box">
+        <h2>A Random Quote</h2>
+        <p id="quote-text">Loading quote...</p>
+    </div>
+  </main>
+
+  <!-- Audio Controls -->
+  <footer>
+    <div id="audio-controls">
+      <h3 style = "text-align: left; margin-left: 0px;"> In this web page there are options to Navigate using Audio!</h3>
+      <p>Ensure your Mic is enabled to be able to use this feature</p>
+      <ul>
+        <li>Say: "Hello" — alerts "Hello World"</li>
+        <li>Say: "Change the color to red/blue/etc."</li>
+        <li>Say: "Navigate to home/stocks/dogs"</li>
+      </ul>
+      <div class="audio-buttons">
+        <button onclick="startAnnyang()">Turn On Listening</button>
+        <button onclick="stopAnnyang()">Turn Off Listening</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
